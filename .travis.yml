@@ -19,7 +19,7 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   
   # push image to docker hub
-  - docker push ashnyapa/multi-client
-  - docker push ashnyapa/multi-nginx
-  - docker push ashnyapa/multi-server
-  - docker push ashnyapa/multi-worker
+  - docker push kashnyapa/multi-client
+  - docker push kashnyapa/multi-nginx
+  - docker push kashnyapa/multi-server
+  - docker push kashnyapa/multi-worker
