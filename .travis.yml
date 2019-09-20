@@ -25,7 +25,7 @@ after_success:
   - docker push kashnyapa/multi-worker
 
 deploy:
-  provider: elasticbeanstack
+  provider: elasticbeanstalk
   region: us-east-2
   app: docker-lessons
   env: MultiDocker-env
