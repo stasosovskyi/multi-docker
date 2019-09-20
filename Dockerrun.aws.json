@@ -24,13 +24,13 @@
 		},
 		{
 			"name": "nginx",
-			"image": "kashnyapa/nginx-worker",
+			"image": "kashnyapa/multi-nginx",
 			"hostname": "nginx",
 			"essential": true,
-			"portMappings": [
+			"PortMapping": [
 				{
 					"hostPort": 80,
-					"containerMapping": 80
+					"containerPort": 80
 				}
 			],
 			"links": ["client", "server"],
