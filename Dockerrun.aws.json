@@ -27,7 +27,7 @@
 			"image": "kashnyapa/multi-nginx",
 			"hostname": "nginx",
 			"essential": true,
-			"PortMapping": [
+			"portMappings": [
 				{
 					"hostPort": 80,
 					"containerPort": 80
