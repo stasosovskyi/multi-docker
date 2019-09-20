@@ -23,3 +23,17 @@ after_success:
   - docker push kashnyapa/multi-nginx
   - docker push kashnyapa/multi-server
   - docker push kashnyapa/multi-worker
+
+deploy:
+  provider: elasticbeanstack
+  region: us-east-2
+  app: docker-lessons
+  env: MultiDocker-env
+  bucket_name: elasticbeanstalk-us-east-2-336811532115
+  bucket_path: docker-multi
+  on:
+    branch: master
+  access_key_id: 
+    secure: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
